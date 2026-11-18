@@ -1,0 +1,36 @@
+runtime: remote
+name: sovereign-agent-skills
+displayName: Sovereign Agent Skills & MCP Suite (Data Genius LLC)
+description: >-
+  Open-source B2B AI agent skills (SKILL.md) and 6 production Streamable HTTP MCP servers for
+  EU AI Act/GDPR/Customs auditing, MCP firewall & cost caps, LLM patch diagnostics, CRE lease underwriting,
+  US 401(k) SECURE 2.0 compliance, and Scope 3 carbon accounting.
+homepage: https://supernova.cool/open
+repository: https://github.com/GhazwanAlemara/sovereign-agent-skills
+license: MIT
+endpoints:
+  - name: datacastle
+    url: https://datacastle.eu/api/mcp
+    manifest: https://datacastle.eu/.well-known/mcp.json
+  - name: supernova
+    url: https://supernova.cool/api/v1/mcp/
+    manifest: https://supernova.cool/.well-known/mcp.json
+  - name: cyber-agents
+    url: https://cyberagents.app/mcp
+    manifest: https://cyberagents.app/.well-known/mcp.json
+  - name: cre-dominion
+    url: https://credominion.com/api/mcp
+    manifest: https://credominion.com/api/mcp/.well-known/mcp.json
+  - name: erisaledger
+    url: https://erisaledger.com/api/mcp
+    manifest: https://erisaledger.com/.well-known/mcp.json
+  - name: gn0e
+    url: https://www.gn0e.com/api/v1/mcp
+    manifest: https://www.gn0e.com/.well-known/mcp.json
+categories:
+  - Compliance & Legal
+  - Cybersecurity
+  - Finance & Tax
+  - Real Estate
+  - AI Infrastructure
+  - Sustainability

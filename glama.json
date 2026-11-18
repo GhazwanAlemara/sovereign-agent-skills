@@ -1,0 +1,50 @@
+{
+  "name": "sovereign-agent-skills",
+  "displayName": "Sovereign B2B Agent Skills & Remote MCP Suite",
+  "publisher": "Data Genius LLC",
+  "license": "MIT",
+  "homepage": "https://supernova.cool/open",
+  "repository": "https://github.com/GhazwanAlemara/sovereign-agent-skills",
+  "capabilities": {
+    "skillsFormat": "SKILL.md",
+    "agentsSupported": ["Claude Code", "Cursor", "Windsurf", "Antigravity", "Codex CLI", "Claude Desktop"],
+    "mcpTransport": "streamableHttp"
+  },
+  "servers": [
+    {
+      "id": "datacastle",
+      "url": "https://datacastle.eu/api/mcp",
+      "wellKnown": "https://datacastle.eu/.well-known/mcp.json",
+      "openHub": "https://datacastle.eu/open"
+    },
+    {
+      "id": "supernova",
+      "url": "https://supernova.cool/api/v1/mcp/",
+      "wellKnown": "https://supernova.cool/.well-known/mcp.json",
+      "openHub": "https://supernova.cool/open"
+    },
+    {
+      "id": "cyber-agents",
+      "url": "https://cyberagents.app/mcp",
+      "wellKnown": "https://cyberagents.app/.well-known/mcp.json",
+      "openHub": "https://cyberagents.app/open"
+    },
+    {
+      "id": "cre-dominion",
+      "url": "https://credominion.com/api/mcp",
+      "openHub": "https://credominion.com"
+    },
+    {
+      "id": "erisaledger",
+      "url": "https://erisaledger.com/api/mcp",
+      "wellKnown": "https://erisaledger.com/.well-known/mcp.json",
+      "openHub": "https://erisaledger.com"
+    },
+    {
+      "id": "gn0e",
+      "url": "https://www.gn0e.com/api/v1/mcp",
+      "wellKnown": "https://www.gn0e.com/.well-known/mcp.json",
+      "openHub": "https://www.gn0e.com"
+    }
+  ]
+}

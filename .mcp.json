@@ -1,0 +1,53 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/mcp.json",
+  "mcpServers": {
+    "datacastle": {
+      "type": "streamableHttp",
+      "url": "https://datacastle.eu/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DATACASTLE_API_KEY}"
+      },
+      "description": "EU AI Act risk classifier, GDPR subprocessor checks, 3-way freight reconciliation, and TARIC/CN validator (https://datacastle.eu/open)"
+    },
+    "supernova": {
+      "type": "streamableHttp",
+      "url": "https://supernova.cool/api/v1/mcp/",
+      "headers": {
+        "X-Supernova-Key": "${SUPERNOVA_API_KEY}"
+      },
+      "description": "MCP monetization gateway, AEGIS trust verification, spend caps, and federated WSP weight-space tools (https://supernova.cool/open)"
+    },
+    "cyber-agents": {
+      "type": "streamableHttp",
+      "url": "https://cyberagents.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CYBERAGENTS_API_KEY}"
+      },
+      "description": "AI agent prompt-injection firewall, MCP payload validator, and A2A trust scorer (https://cyberagents.app/open)"
+    },
+    "cre-dominion": {
+      "type": "streamableHttp",
+      "url": "https://credominion.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CRE_DOMINION_API_KEY}"
+      },
+      "description": "Commercial Real Estate lease abstraction, CAM reconciliation audits, DSCR/cap-rate underwriting, and tax-exit modeling (https://credominion.com)"
+    },
+    "erisaledger": {
+      "type": "streamableHttp",
+      "url": "https://erisaledger.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ERISALEDGER_API_KEY}"
+      },
+      "description": "Zero-PII US 401(k) SECURE 2.0 Roth catch-up, LTPT census audit, IRS Form 8881 credits, and DOL VFCP calculator (https://erisaledger.com)"
+    },
+    "gn0e": {
+      "type": "streamableHttp",
+      "url": "https://www.gn0e.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${GN0E_API_KEY}"
+      },
+      "description": "Scope 3 cloud compute, flight, and freight carbon accounting plus UN CER offset quoting (https://www.gn0e.com)"
+    }
+  }
+}
